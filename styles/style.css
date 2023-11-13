@@ -18,7 +18,8 @@ html {
   background-color: #1b1919;
   display: flex;
   align-items: center;
-} 
+  justify-content: center;
+}
 
 h1,
 h2,
@@ -47,7 +48,7 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-} 
+}
 
 .content {
   display: flex;
@@ -70,7 +71,7 @@ ol {
   height: 100%;
   object-fit: cover;
   object-position: center;
-} 
+}
 
 .search-form {
   display: flex;
@@ -178,9 +179,9 @@ fieldset {
   background-color: #545050;
 }
 
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline solid #fff;
-} 
+}
 
 .content__list-item:hover {
   text-decoration: underline solid #fff;
@@ -201,7 +202,7 @@ fieldset {
 
 .search-form__textfield:active {
   outline: 1px solid #fff;
-} 
+}
 
 .search-form__textfield:focus {
   outline: none;
@@ -210,9 +211,6 @@ fieldset {
 .search-form__textfield:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 1px;
-} 
-.search-form__textfield:hover {
-  text-decoration: none;
 }
 
 .search-form__label:focus {
@@ -226,7 +224,7 @@ fieldset {
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 1px;
-} 
+}
 
 .content__details {
   overflow: hidden;
