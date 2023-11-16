@@ -140,8 +140,8 @@ fieldset {
   color: inherit;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  border-left: transparent;
-  border-right: transparent;
+  border-left: none;
+  border-right: none;
 }
 
 .button {
@@ -209,35 +209,30 @@ fieldset {
 
 .search-form__textfield:focus {
   outline: none;
-  border: none;
-}
-
-.search-form__textfield:has(:focus-visible) {
-  outline: 1px solid #fff;
-  outline-offset: 1px;
-}
-
-.search-form__textfield:hover {
-  outline: none;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-}
-
-.search-form__textfield:active {
-  border: 1px solid #fff;
 }
 
 .search-form__label:focus {
   outline: none;
 }
 
-.search-form__label:focus-visible {
-  outline: 1px solid #fff;
-}
-
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
-  outline-offset: 1px;
+  outline-offset: 2px;
+}
+
+.search-form__label:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
+.search-form__textfield:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
+.search-form__textfield:active {
+  border: none;
+  outline: 1px solid #fff;
 }
 
 .content__details {
